@@ -77,12 +77,13 @@ function orderByYear(moviesArray) {
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(moviesArray) {
-    const newArray = structuredClone(moviesArray);
-        newArray.map(movies =>{
+    let newArray = structuredClone(moviesArray);
+     let titles = newArray.map(movies =>{
             return movies.title;
         })
 
-    console.log(newArray)    
+    return titles;
+    
 
 }
 
