@@ -82,13 +82,13 @@ function orderAlphabetically(moviesArray) {
      let titles = newArray.map(movies =>{
             return movies.title;
         })
+        let alph = titles.sort();
+        console.log(alph)
        
-        let first = titles.slice(0,20);
+        let first = alph.slice(0,20);
        // console.log(first);
         
-        let alph = first.sort();
-        console.log(alph)
-         return alph;
+         return first;
     
         
         
@@ -97,7 +97,7 @@ function orderAlphabetically(moviesArray) {
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 function turnHoursToMinutes(moviesArray) {
     let newArray = structuredClone(moviesArray);
-    
+        
 
 
 }
